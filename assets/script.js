@@ -1,4 +1,12 @@
 
+var today = new Date();
+var day = today.getDay();
+console.log(day);
+
+console.log(today);
+var dateDisplay = document.querySelector("#dateNow");
+dateDisplay.textContent = today;
+
 
 
 
@@ -53,6 +61,63 @@ if(toDoListSaturday) {
 
 if(toDoListSunday) {
     sundayValue.setAttribute('placeholder', toDoListSunday);
+}
+
+
+if (day === 1){
+    mondayValue.setAttribute('style', 'background-color: blue');
+} else if (day > 1) {
+    mondayValue.setAttribute('style', 'background-color: red')
+} else if (day < 1) {
+    mondayValue.setAttribute('style', 'background-color: yellow')
+}
+
+if (day === 2){
+    tuesdayValue.setAttribute('style', 'background-color: blue');
+} else if (day > 2) {
+    tuesdayValue.setAttribute('style', 'background-color: red')
+} else if (day < 2) {
+    tuesdayValue.setAttribute('style', 'background-color: yellow')
+}
+
+if (day === 3){
+    wednesdayValue.setAttribute('style', 'background-color: blue');
+} else if (day > 3) {
+    wednesdayValue.setAttribute('style', 'background-color: red')
+} else if (day < 3) {
+    wednesdayValue.setAttribute('style', 'background-color: yellow')
+}
+
+if (day === 4){
+    thursdayValue.setAttribute('style', 'background-color: blue');
+} else if (day > 4) {
+    thursdayValue.setAttribute('style', 'background-color: red')
+} else if (day < 4) {
+    thursdayValue.setAttribute('style', 'background-color: yellow')
+}
+
+if (day === 5){
+    fridayValue.setAttribute('style', 'background-color: blue');
+} else if (day > 5) {
+    fridayValue.setAttribute('style', 'background-color: red')
+} else if (day < 5) {
+    fridayValue.setAttribute('style', 'background-color: yellow')
+}
+
+if (day === 6){
+    saturdayValue.setAttribute('style', 'background-color: blue');
+} else if (day > 6) {
+    saturdayValue.setAttribute('style', 'background-color: red')
+} else if (day < 6) {
+    saturdayValue.setAttribute('style', 'background-color: yellow')
+}
+
+if (day === 7){
+    sundayValue.setAttribute('style', 'background-color: blue');
+} else if (day > 7) {
+    sundayValue.setAttribute('style', 'background-color: red')
+} else if (day < 7) {
+    sundayValue.setAttribute('style', 'background-color: yellow')
 }
 
 
